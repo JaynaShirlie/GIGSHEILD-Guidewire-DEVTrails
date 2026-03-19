@@ -152,7 +152,7 @@ confirmed fraud → FLAGGED + suspended
 
 **gigshield. because the rain shouldn't cost them their rent.**
 
-*Guidewire DEVTrails 2026 — built on 0 sleep and very strong chai ☕*
+*Guidewire DEVTrails 2026 — built on 0 sleep and very addictive mogu mogu 🧃*
 
 <br/>
 
