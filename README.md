@@ -91,16 +91,22 @@ sign up → risk profiled → weekly premium set → coverage active
 
 ---
 
-## AI/ML stack
+## 🚀 Initial MVP Tech Stack
 
-| Module | Model | Purpose |
-|--------|-------|---------|
-| Risk Profiler | Random Forest | weekly risk score per zone |
-| Dynamic Pricer | Regression | risk score → weekly premium |
-| Income Fingerprinter | LSTM / baseline deviation | behavioral disruption detection |
-| Fraud Detector | Isolation Forest | anomaly + peer cluster detection |
-| Workability Score | Weighted env. index | payout trigger (W < 40) |
-| Pool Health Monitor | Rule-based + projection | liquidity risk management |
+| Layer | Component | Tech / Model | Purpose |
+|------|----------|-------------|---------|
+| Backend | API Layer | Python, FastAPI | Handles requests, triggers, claims engine |
+| Frontend | UI | HTML, CSS, JavaScript, TypeScript | User dashboard, onboarding, status tracking |
+| Database | Storage | Supabase (PostgreSQL) | User data, transactions, activity logs |
+| Payments | Gateway | Razorpay | Premium collection + instant payouts (UPI) |
+| Weather Data | API | OpenWeatherMap API | Rain, temperature triggers |
+| Air Quality | API | Air Quality API | AQI-based disruption triggers |
+| ML - Risk | Risk Profiler | Random Forest (scikit-learn) | Zone-based weekly risk scoring |
+| ML - Pricing | Dynamic Pricer | Regression (scikit-learn) | Risk → premium calculation |
+| ML - Behavior | Income Fingerprinter | Baseline deviation / LSTM | Detect income drop patterns |
+| ML - Fraud | Fraud Detector | Isolation Forest (scikit-learn) | Anomaly + spoof detection |
+| Decision Engine | Workability Score | Weighted environmental index | Triggers payout (W < 40) |
+| System Safety | Pool Health Monitor | Rule-based + projections | Prevents liquidity exhaustion |
 
 **workability score:** $W = 100 - (w_r \cdot R + w_t \cdot T + w_a \cdot A)$ — payout fires when $W < 40$
 
