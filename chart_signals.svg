@@ -36,4 +36,6 @@
   <rect x="230" y="178" width="40" height="20" rx="4" fill="#FFD45A"/>
   <text x="275" y="192" fill="#FFD45A" font-size="10" font-weight="bold"> 10%</text>
 
+  <text xmlns="http://www.w3.org/2000/svg" x="340" y="214" text-anchor="middle" fill="#444" font-size="9">+ weather source cross-validation (5%) not shown</text>
+
 </svg>
